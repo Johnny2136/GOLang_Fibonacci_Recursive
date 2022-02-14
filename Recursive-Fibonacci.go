@@ -1,3 +1,5 @@
+//Demo Fibonacci sequence generator
+//Johnny2136
 package main
 
 import (
@@ -5,8 +7,8 @@ import (
 	"time"
 )
 
-// fibonacci in GOlang good to 45 places
-// fibo function returns Recursive Solution
+// fibonacci in GOlang gnited to 45 sequences
+// fibo function returns recursive solution
 func fiboRec(n int) int {
 	if n < 2 {
 		return n
@@ -14,6 +16,8 @@ func fiboRec(n int) int {
 	return fiboRec(n-1) + fiboRec(n-2)
 }
 
+// main calls fiborec "i" number of times and prints to display
+// the time.Since(start) gives elapsed time of main to execute
 func main() {
 	start := time.Now()
 
